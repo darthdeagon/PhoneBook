@@ -5,7 +5,7 @@ function database_connection(){
   $user = "root";
   $pw = "";
   $dbname = "Phonebook";
-  $connection = mysqli_connect($host, $user, $pw, $dbname);     // Funkcija za povezivanje sa bazom
+  $connection = mysqli_connect($host, $user, $pw, $dbname);
 
   if ($connection) {
     $message = "connected";
@@ -26,7 +26,7 @@ function insert_contact($name, $number){
 }
 function get_contacts(){
   $connection = database_connection();
-  $sql = "SELECT * FROM phonebook";                 //IZVLACENJA SVIH KORISNIKA
+  $sql = "SELECT * FROM phonebook";                 
    return $results = $connection->query($sql);
  }
  function get_contact_by_id($id){
