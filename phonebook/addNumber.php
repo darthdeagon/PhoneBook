@@ -42,8 +42,8 @@ require_once("database.php");
         <div class="col col-6 bg-dark text-light mt-2 p-5 mb-5">
           <form method="POST">
         <div class="mb-3">
-          <label for="exampleInputEmail1  " class="form-label">Name</label>
-          <input type="text" name="name" class="form-control" value="<?php if(isset($name_data)): echo $name_data; ?> <?php endif; ?>" id="exampleInputEmail1" autocomplete="off">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" name="name" class="form-control" value="<?php if(isset($name_data)): echo $name_data; ?> <?php endif; ?>" id="name" autocomplete="off">
           <div id="emailHelp" class="form-text">
             <?php if (isset($name_error)): ?>
               <?php echo $name_error ?>
@@ -51,8 +51,8 @@ require_once("database.php");
           </div>
         </div>
         <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Phone number</label>
-          <input type="number" name="number" class="form-control" id="exampleInputPassword1" autocomplete="off">
+          <label for="phnm" class="form-label">Phone number</label>
+          <input type="number" name="number" class="form-control" id="phnm" autocomplete="off">
         </div>
         <div id="emailHelp" class="form-text">
           <?php if (isset($number_error)): ?>
