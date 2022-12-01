@@ -26,7 +26,7 @@ function insert_contact($name, $number){
 }
 function get_contacts(){
   $connection = database_connection();
-  $sql = "SELECT * FROM phonebook";                 
+  $sql = "SELECT * FROM phonebook";
    return $results = $connection->query($sql);
  }
  function get_contact_by_id($id){
@@ -47,4 +47,5 @@ function delete_user($id){
   $connection->query($sql);
   return(mysqli_affected_rows($connection) == 1)? true : false;
 }
+
  ?>
